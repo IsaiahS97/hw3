@@ -1,3 +1,6 @@
+
+#manually inputted some data while testing, ignore
+
 # Delete all entries
 Entry.delete_all
 

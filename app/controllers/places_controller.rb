@@ -6,7 +6,7 @@ class PlacesController < ApplicationController
   end
 
   def show
-    # find a Company
+    # find a place
     @place = Place.find_by({"id" => params["id"]})
   
     
@@ -15,7 +15,7 @@ class PlacesController < ApplicationController
   end
 
   def new
-    # render view with new company form
+    # render view with new form
   end 
 
   def create 
