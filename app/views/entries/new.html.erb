@@ -4,8 +4,8 @@
 
 <form action="/entries" method="post">
   
-    <label for="place_id">Place</label>
-    <input type="text" name="place_id" id="place_id" value="<%= @place["id"] %>">
+    <label for="place_id"></label>
+    <input type="hidden" name="place_id" id="place_id" value="<%= @place["id"] %>">
   
   <p>
     <label for="title">Event Name</label>

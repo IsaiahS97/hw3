@@ -2,13 +2,13 @@
 
 <h1><%= @place["name"] %></h1>
 
-<h2>Entries</h2>
+<h2>Travel Log Entries:</h2>
 
 <ol>
   <% for entry in @entries %>
     <h3><%= entry["title"] %> </h3>
-    <h5><%= entry["event_date"] %> </h5>
-    <h5><%= entry["description"] %> </h5>
+    <p>Date: <%= entry["event_date"] %> </p>
+    <p>Description: <%= entry["description"] %> </p>
   <% end %>
 </ol>
 

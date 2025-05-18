@@ -1,8 +1,5 @@
-Place.destroy_all
-Entry.destory_all
+# Delete all entries
+Entry.delete_all
 
-mexico_city = Place.new
-mexico_city["name"] = "Mexico City"
-mexico_city.save
-
-
+# Or delete all places
+Place.delete_all

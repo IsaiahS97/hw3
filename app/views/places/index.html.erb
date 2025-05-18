@@ -6,11 +6,11 @@
 
 <ul>
   <% for place in @places %>
-    <li>
+    <p>
       <a href="/places/<%= place["id"] %>">
         <%= place["name"] %> 
       </a>
-    </li>
+    </p>
   <% end %>
 </ul>
 
