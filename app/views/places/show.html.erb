@@ -2,13 +2,15 @@
 
 <h1><%= @place["name"] %></h1>
 
-<h3>Entries</h3>
+<h2>Entries</h2>
 
-<ul>
+<ol>
   <% for entry in @entries %>
-    <li><%= entry["title"] %> </li>
+    <h3><%= entry["title"] %> </h3>
+    <h5><%= entry["event_date"] %> </h5>
+    <h5><%= entry["description"] %> </h5>
   <% end %>
-</ul>
+</ol>
 
 <p>
   <a href="/entries/new?place_id=<%= @place["id"] %>">New Post</a>
